@@ -37,7 +37,7 @@ export const products = [
   },
 ];
 
-export const categories = [
+const categories = [
   "Todos",
   "Pop",
   "MPB",

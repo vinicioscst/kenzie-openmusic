@@ -19,11 +19,26 @@
     color: var(--color-grey-1);
 }
 
+.dark__mode > body > main > .app > .app__filter-genre > .filters > input:hover+label {
+    background-color: var(--color-grey-7);
+    border: .0625rem solid var(--color-grey-0);
+
+    color: var(--color-grey-0);
+}
+
+
 .app > .app__filter-genre > .filters > input:checked+label {
     background-color: var(--color-grey-1);
     border: .0625rem solid var(--color-grey-1);
 
     color: var(--color-grey-9);
+}
+
+.dark__mode > body > main > .app > .app__filter-genre > .filters > input:checked+label {
+    background-color: var(--color-grey-7);
+    border: .0625rem solid var(--color-grey-0);
+
+    color: var(--color-grey-0);
 }
 
 .app > .app__filter-price > .filter__input > input {
@@ -33,7 +48,7 @@
     width: 100%;
     height: .5rem;
 
-    background: linear-gradient(90deg, var(--color-brand-1) 100%, var(--color-grey-5) 100%);
+    background: linear-gradient(90deg, var(--color-brand-1) 0%, var(--color-grey-5) 0%);
     border-radius: var(--radius-1);
 
     cursor: pointer;
