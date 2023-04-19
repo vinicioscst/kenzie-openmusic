@@ -1,0 +1,37 @@
+@import url('./globalStyles.css');
+
+button {
+    padding: .5625rem .625rem;
+    border: .0625rem solid transparent;
+    border-radius: var(--radius-1);
+
+    font-family: "Inter", sans-serif;
+    font-weight: var(--font-2-weight);
+    color: var(--color-grey-2);
+
+    cursor: pointer;
+}
+
+.dark-mode__btn {
+    background-color: var(--color-grey-8);
+    border: .0625rem solid var(--color-grey-8);
+
+    transition: all 0.2s;
+}
+
+.dark-mode__btn:hover {
+    background-color: var(--color-grey-7);
+    border: .0625rem solid var(--color-grey-7);
+}
+
+.card__buy-btn {
+    background-color: var(--color-grey-7);
+    border: .0625rem solid var(--color-grey-7);
+
+    transition: all 0.2s;
+}
+
+.card__buy-btn:hover {
+    background-color: var(--color-grey-9);
+    border: .0625rem solid var(--color-grey-9);
+}

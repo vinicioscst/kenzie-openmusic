@@ -1,5 +1,7 @@
-/* Desenvolva sua estilização aqui ... */
 @import url('./globalStyles.css');
+@import url('./components/buttons.css');
+@import url('./components/inputs.css');
+@import url('./components/cards.css');
 
 .header {
     display: flex;
@@ -7,14 +9,68 @@
     justify-content: space-between;
 }
 
-.header h1 {
-    font-size: var(--font-1);
+.header > .page__title {
+    font-size: var(--font-1-size);
     font-weight: 600;
     text-transform: lowercase;
+    color: var(--color-grey-1);
 }
 
 .app {
     display: flex;
     flex-direction: column;
     gap: 3.75rem;
+}
+
+.app > .app__filter-genre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.element__title {
+    font-size: var(--font-2-size);
+    font-weight: var(--font-1-weight);
+    color: var(--color-grey-1);
+}
+
+.app > .app__filter-genre > .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.59rem;
+}
+
+.app > .app__filter-price {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.app > .app__filter-price > .filter__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app > .app__filter-price > .filter__header > .filter__max-price {
+    font-size: var(--font-2-size);
+    font-weight: var(--font-2-weight);
+    color: var(--color-grey-2);
+}
+
+.app > .app__album-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+
+
+
+/* Break Points */
+
+@media (min-width: 768px) {
+
+    .app > .app__filter-genre > .filters {
+        gap: 2.225rem;
+    }
+    
 }
