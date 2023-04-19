@@ -27,5 +27,43 @@
 }
 
 .app > .app__filter-price > .filter__input > input {
+    appearance: none;
+    -webkit-appearance: none;
+
     width: 100%;
+    height: .5rem;
+
+    background-color: var(--color-grey-5);
+    border-radius: var(--radius-1);
+
+    cursor: pointer;
 }
+
+.app > .app__filter-price > .filter__input > input::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 1.125rem;
+    height: 1.125rem;
+
+    background-color: var(--color-white-fixed);
+    border: .3125rem solid var(--color-brand-1);
+    border-radius: 50%;
+}
+
+
+
+.app > .app__filter-price > .filter__input > input::-moz-range-thumb {
+    width: .5rem;
+    height: .5rem;
+
+    background-color: var(--color-white-fixed);
+    border: .3125rem solid var(--color-brand-1);
+    border-radius: 50%;
+}
+
+/* .app > .app__filter-price > .filter__input > input::-moz-range-progress {
+    background-color: var(--color-brand-1);
+    border-radius: 5px;
+    height: .5rem;
+} */
