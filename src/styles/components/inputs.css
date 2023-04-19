@@ -33,7 +33,7 @@
     width: 100%;
     height: .5rem;
 
-    background-color: var(--color-grey-5);
+    background: linear-gradient(90deg, var(--color-brand-1) 100%, var(--color-grey-5) 100%);
     border-radius: var(--radius-1);
 
     cursor: pointer;
